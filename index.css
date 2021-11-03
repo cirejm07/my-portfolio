@@ -55,6 +55,12 @@ nav ul a:hover {
   cursor: context-menu;
 }
 
+@media screen and (max-width: 374px) {
+  .logo {
+    width: 200px;
+  }
+}
+
 .ctaBtn {
   font-weight: bold;
   text-transform: uppercase;
