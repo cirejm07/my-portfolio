@@ -1,2 +1,0 @@
-https://murmuring-lowlands-28701.herokuapp.com/
-https://git.heroku.com/murmuri

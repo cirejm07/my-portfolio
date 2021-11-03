@@ -207,6 +207,7 @@ input {
   transform: translateY(-30%);
   color: whitesmoke;
   text-align: center;
+  min-width: 100%;
 }
 
 .toolsContainer {
