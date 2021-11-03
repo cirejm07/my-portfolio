@@ -1,0 +1,164 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* main */
+
+.main {
+  margin-top: 12%;
+}
+
+.meImg {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .mainContent {
+    margin-top: 30%;
+  }
+}
+
+#navbarSupportedContent {
+  margin-top: 1.2%;
+}
+
+a {
+  color: black;
+}
+
+.ctaBtn {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ctaBtn a:nth-child(1):hover,
+.ctaBtn a:nth-child(2):hover {
+  transform: scale(1.1);
+  margin: 0 1rem;
+}
+
+/* section */
+section {
+  margin-top: 13.2rem;
+}
+
+/* .projectSection {
+  margin-top: 15rem;
+} */
+
+.fab {
+  font-size: 2rem;
+  color: black;
+}
+.fas {
+  font-size: 2rem;
+  color: black;
+}
+
+.fab:hover,
+.fas:hover {
+  transform: scale(1.2);
+}
+
+form {
+  position: relative;
+}
+
+input {
+  outline: none !important;
+}
+.emailInput {
+  border: none !important;
+  border-bottom: 1px solid #000 !important;
+  background: transparent !important;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px !important;
+  outline: none !important;
+}
+
+.emailInput:focus + .emailLabel,
+.emailInput:valid + .emailLabel {
+  transform: translateY(-8%) !important;
+  transition: transform 0.5s ease;
+  font-size: 18px;
+  color: #000;
+}
+.emailInput:focus + .emailLabel::after,
+.emailInput:valid + .emailLabel::after {
+  transform: translateX(0%);
+}
+
+.emailLabel::after {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.emailLabel {
+  position: absolute;
+  bottom: -10%;
+  left: 0px;
+  color: #000;
+  width: 100%;
+  height: 82.5%;
+  pointer-events: none;
+  font-size: 1.2rem;
+}
+
+.fNameInput {
+  border: none !important;
+  border-bottom: 1px solid #000 !important;
+  background: transparent !important;
+  width: 100%;
+  height: 100%;
+  padding-top: 30px !important;
+  outline: none !important;
+}
+
+.fNameInput:focus + .fNameLabel,
+.fNameInput:valid + .fNameLabel {
+  transform: translateY(-8%) !important;
+  transition: transform 0.5s ease;
+  font-size: 18px;
+  color: #000;
+}
+.fNameInput:focus + .fNameLabel::after,
+.fNameInput:valid + .fNameLabel::after {
+  transform: translateX(0%);
+}
+
+.fNameLabel::after {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 100%;
+  width: 100%;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.fNameLabel {
+  position: absolute;
+  bottom: 12%;
+  left: 0px;
+  color: #000;
+  width: 100%;
+  height: 80%;
+  pointer-events: none;
+  font-size: 1.2rem;
+}
