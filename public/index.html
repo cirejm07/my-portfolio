@@ -35,8 +35,10 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#"
+        ><img src="../public/img/logo.png" class="img-fluid logo" alt=""
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -50,52 +52,26 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="#"
               >Home <span class="sr-only">(current)</span></a
             >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+            <a class="nav-link" href="#projectSection">Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="#toolSection">Tools</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contactSection">Contact</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
       </div>
     </nav>
     <!-- end of navbar -->
+
     <!-- container -->
     <div class="bg-transparent">
       <!-- Main -->
@@ -108,7 +84,9 @@
               <h1>Jeric Moreno</h1>
               <h3>Full Stack Web Developer ✓</h3>
               <div class="ctaBtn">
-                <a href="" class="btn bg-primary my-1">Projects</a>
+                <a href="#projectSection" class="btn bg-primary my-1"
+                  >Projects</a
+                >
                 <a href="#contactSection" class="btn bg-success my-1"
                   >Contact Me</a
                 >
@@ -150,10 +128,9 @@
           </p>
         </div>
         <div class="mb-5">
-          <a href="./JericMoreno.pdf" class="btn btn-primary mt-5" download
+          <a href="../JericMoreno.pdf" class="btn btn-primary mt-5" download
             >Download CV</a
           >
-          <a href="#" class="btn btn-success mt-5">Contact Me</a>
         </div>
         <aside>
           <h3>Skills</h3>
@@ -238,6 +215,7 @@
         data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
+        id="projectSection"
       >
         <div class="row">
           <div
@@ -312,7 +290,7 @@
               <a
                 href="https://gitlab.com/zuitt10/b123/capstone3-moreno"
                 target="_blank"
-                ><i id="sourcesGithub" class="fab fa-github-square st"></i
+                ><i id="sourcesGithub" < class="fab fa-gitlab"></i
               ></a>
               <span class="border-left border-dark mx-3"></span>
               <a href="https://thejshop-cirejm07.vercel.app/" target="_blank"
@@ -339,6 +317,7 @@
           class="text-center mt-5 font-weight-bold"
           data-aos="zoom-out-down"
           data-aos-delay="1000"
+          id="toolSection"
         >
           Tools
         </h1>
@@ -348,15 +327,39 @@
             data-aos="zoom-out-down"
             data-aos-delay="1500"
           >
-            <img width="72.6" src="./img/logo-mongodb.png" />
-            <img width="72.6" src="./img/logo-nodejs.png" />
-            <img width="72.6" src="./img/logo-expressjs.png" />
-            <img width="72.6" src="./img/logo-react.png" />
-            <img width="72.6" src="./img/logo-heroku.png" />
-            <img width="72.6" src="./img/logo-postman.png" />
-            <img width="72.6" src="./img/logo-sublime-text-3.png" />
-            <img width="72.6" src="./img/logo-postman.png" />
-            <img width="72.6" src="./img/logo-gitlab-ci-cd.png" />
+            <div class="img1">
+              <img width="72.6" src="./img/logo-mongodb.png" />
+              <div class="childImgContent">MongoDB</div>
+            </div>
+            <div class="img1">
+              <img width="72.6" src="./img/logo-nodejs.png" />
+              <div class="childImgContent">Node JS</div>
+            </div>
+            <div class="img1">
+              <img width="72.6" src="./img/logo-expressjs.png" />
+              <div class="childImgContent">Express JS</div>
+            </div>
+            <div class="img1">
+              <img width="72.6" src="./img/logo-react.png" />
+              <div class="childImgContent">React JS</div>
+            </div>
+            <div class="img1">
+              <img width="72.6" src="./img/logo-heroku.png" />
+              <div class="childImgContent">Heroku</div>
+            </div>
+            <div class="img1">
+              <img width="72.6" src="./img/logo-postman.png" />
+              <div class="childImgContent">Postman</div>
+            </div>
+            <div class="img1">
+              <img width="72.6" src="./img/logo-sublime-text-3.png" />
+              <div class="childImgContent">Sublime</div>
+            </div>
+
+            <div class="img1">
+              <img width="72.6" src="./img/logo-gitlab-ci-cd.png" />
+              <div class="childImgContent">Gitlab</div>
+            </div>
           </div>
         </div>
 
@@ -369,7 +372,7 @@
           class="row d-flex justify-content-around mt-5"
         >
           <div class="col-md-6 my-4">
-            <h2 class="text-center mb-3">Find Us!</h2>
+            <h2 class="text-center mb-3">My Location</h2>
             <iframe
               class="h-100 w-100"
               id="gmap_canvas"
@@ -382,7 +385,12 @@
           </div>
           <div class="col-md-6 my-4">
             <h2 class="text-center my-5">Let's Get Connected!</h2>
-            <form class="bg-light" id="contact-form">
+            <form
+              class="bg-light"
+              action="https://formspree.io/f/mnqlkvzn"
+              method="POST"
+              id="my-form"
+            >
               <div class="form-group">
                 <input
                   class="fNameInput"
@@ -407,7 +415,12 @@
               </div>
               <div class="form-group">
                 <label for="txt-textarea">Message</label>
-                <textarea class="form-control" id="txt-textarea" rows="5">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                >
                 </textarea>
               </div>
               <button
@@ -420,6 +433,7 @@
               </button>
             </form>
           </div>
+          <div id="status"></div>
         </div>
         <!-- end of contact -->
       </div>
@@ -428,7 +442,7 @@
       <!-- End of Main -->
     </div>
     <!-- End of Container -->
-    <footer class="bg-transparent mt-5 d-md-flex justify-content-between py-4">
+    <footer class="bg-light mt-5 d-md-flex justify-content-between py-4">
       <p class="text-center text-dark lead px-5">
         Copyright &copy; 2021 Jeric Moreno. All Rights Reserved
       </p>
@@ -457,6 +471,19 @@
 
     <!-- end of footer -->
 
+    <script type="text/javascript">
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-100px";
+        }
+        prevScrollpos = currentScrollPos;
+      };
+    </script>
+
     <!-- JS dependency -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -472,6 +499,7 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./index.js"></script>
   </body>

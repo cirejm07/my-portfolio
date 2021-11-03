@@ -26,12 +26,33 @@ html {
   }
 }
 
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
 #navbarSupportedContent {
   margin-top: 1.2%;
 }
 
 a {
   color: black;
+}
+
+nav ul a:hover {
+  transform: scale(1.2);
+  background-color: rgb(230, 230, 230);
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+.logo {
+  cursor: context-menu;
 }
 
 .ctaBtn {
@@ -161,4 +182,33 @@ input {
   height: 80%;
   pointer-events: none;
   font-size: 1.2rem;
+}
+
+#status {
+  visibility: hidden;
+}
+
+.img1 {
+  position: relative;
+  display: inline;
+}
+
+.childImgContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.childImgContent:hover {
+  opacity: 1;
+  background-color: rgb(0, 0, 0, 0.5);
+  padding: 1rem 0;
+  transform: translateY(-30%);
+  color: whitesmoke;
+  text-align: center;
+}
+
+.toolsContainer {
+  display: flex;
 }
