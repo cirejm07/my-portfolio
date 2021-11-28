@@ -220,3 +220,44 @@ input {
 .toolsContainer {
   display: flex;
 }
+
+/* aside */
+aside ul {
+  margin: 0 auto;
+}
+aside ul li {
+  list-style-type: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+aside ul img {
+  width: 5%;
+  height: 5%;
+}
+
+aside h5 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2rem;
+  position: relative;
+}
+aside h5::before {
+  content: "____";
+  text-decoration: underline;
+  position: absolute;
+  bottom: 85%;
+  left: 50%;
+}
+aside h5::after {
+  content: "____";
+  text-decoration: underline;
+  position: absolute;
+  top: 15%;
+  right: 50%;
+}
+
+.spoilerAlert {
+  max-width: 50%;
+}
